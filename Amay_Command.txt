@@ -1,0 +1,141 @@
+-------------------------------install Virtualmachine----------------------Commands:
+1.The df command displays information about total space and available space on a file system.
+command :- df-h
+
+2.add new user 
+command:-sudo adduser UserName
+password : 
+
+
+3. change User 
+command:- su-User
+password :
+-------------------------------Ssh------------------------------------------
+
+4.print Certain linux Standard Base and Information.
+command :- lsb_release -a
+
+5 it use for creating new key Pairs for ssh
+command :- ssh-key
+
+6 for List 
+command :- ls
+
+7 public key send to user@address
+command :- ssh-copy-id user@Ipaddress.
+
+8. install ssh server
+command :- sudo apt install openssh-server
+
+9. open the SSH server configuration file.
+command :- sudo nano /etc/ssh/sshd_config 
+
+10check ip address
+command :- ip addr
+
+11 change directory 
+command :- cd 
+
+12 for Restart Shh
+command :- Sudo service ssh restart.
+
+-----------------------------mount storage----------------------------------
+13  open the SSH server configuration file with the following command:
+command :- df -h
+
+14 add new Drive 
+command :- sudo mkfs -t ext4/dev/sdb.
+
+15 use for mount 
+command :- sudo mount /dev/sdb.
+
+16 create file media 
+command :- sudo mount /dev/sdb/media
+
+17 change directory 
+command :- cd.
+
+-----------------------Apache Tomcat----------------------------------------
+
+18 linux update File
+command :- sudo apt update
+
+19  install Jdk 
+command :- sudo apt install default-jdk
+
+20 check java version
+command :- java -version
+
+21 search for tomcat 
+command :- sudo apt -cache search tomcat 
+
+22 tomcat install 
+command :- sudo apt install tomcat9 tomcat9-admin 
+
+23 use to allow port
+command :- sudo ufw allow from any to any port 8080 proto tcp
+
+24 check ip address
+command :-ip addr
+
+25 check to browser 
+command:- ip address :port number
+
+--------------------------------Create rules in IpTable--------------------
+26 linux update File 
+command:- sudo apt update
+
+27 for install Iptable
+command :-sudo apt-get install iptables
+
+28 for iptables details
+command :- sudo iptables -S
+
+29 for IP Address Port Block
+command :- sudo iptables -A INPUT -j REJECT -p ICMP --icmp type echo-request
+
+30 for IP Address Port UnBlock
+command :- sudo iptables -D INPUT -j REJECT -p ICMP --icmp type echo-request
+
+31 for Description 
+command :- sudo iptables -L -v
+
+32 for Ping Ip Address use 
+Command :- ping Ip Address.
+
+------------------------------------Grefana---------------------------------
+33 for Update 
+command :- sudo apt update -y
+
+34 for rebot
+command :- sudo reboot
+
+35 for install transport http
+command: sudo apt-get install -y
+
+36 for install software properties-wget
+command: sudo apt-get install -y
+
+37 for get key and add key
+command :wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+
+38 add betA Repository for Stable main
+command: sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+
+39 install grafana
+command: sudo apt-get install grafana
+
+40  add grafana to the autostart and start the Grafana daemon itself.
+command :sudo systemctl enable grafana-server
+
+41 Start Server
+
+command : sudo systemctl start grafana-server
+
+42 And finally, check the status of Grafana:
+command sudo systemctl status grafana-server
+
+43 Install prometheus
+command : sudo apt-get install prometheus
+
+
